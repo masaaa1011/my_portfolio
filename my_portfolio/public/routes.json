@@ -6,11 +6,16 @@
         "statusCode": 200
       }
     ],
+    "navigationFallback": {
+          "rewrite": "/index.html",
+          "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
+    },
     "platformErrorOverrides": [
       {
         "errorType": "NotFound",
         "statusCode": "302",
         "serve": "/Index.html"
       }
+      
     ]
   }

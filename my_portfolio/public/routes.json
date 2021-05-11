@@ -1,0 +1,22 @@
+{
+    "routes": [
+      {
+        "route": "/*",
+        "serve": "/index.html",
+        "allowedRoles": ["authenticated", "admin"],
+        "statusCode": 200
+      }
+    ],
+    "platformErrorOverrides": [
+      {
+        "errorType": "Unauthenticated",
+        "statusCode": "302",
+        "serve": "/Index.html"
+      },
+      {
+        "errorType": "NotFound",
+        "statusCode": "302",
+        "serve": "/Index.html"
+      }
+    ]
+  }

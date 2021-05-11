@@ -8,11 +8,6 @@
     ],
     "platformErrorOverrides": [
       {
-        "errorType": "Unauthenticated",
-        "statusCode": "302",
-        "serve": "/Index.html"
-      },
-      {
         "errorType": "NotFound",
         "statusCode": "302",
         "serve": "/Index.html"

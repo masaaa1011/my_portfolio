@@ -1,0 +1,15 @@
+{
+    "include": [
+      "./src/**/*",
+      "./gatsby-*.ts"
+, "gatsby-config.js", "gatsby-config.js"    ],
+    "compilerOptions": {
+      "target": "es2019",
+      "module": "commonjs",
+      "lib": ["dom", "es2017"],
+      "jsx": "react",
+      "strict": true,
+      "esModuleInterop": true,
+      "baseUrl": "."
+    }
+  }

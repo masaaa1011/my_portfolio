@@ -3,6 +3,17 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    key01: `value01`,
+    key02: [
+      `value02_01`,
+      `value02_02`,
+      `value02_03`
+    ],
+    key03: {
+      childKey01: `childValue01`,
+      childKey02: `childValue02`,
+      childKey03: `childValue03`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -1,14 +1,13 @@
 import * as React from "react"
-import { Link, PageProps } from "gatsby"
+import { Link } from "gatsby"
 import { ImageFormat, StaticImage } from "gatsby-plugin-image"
 
 import Layout from '../components/share/layout/layout'
-import LayoutProps from "../components/share/layout/layoutProps"
 
 const IndexPage: React.FC = () => (
 <>
   <Layout>
-    <h1>hoge</h1>
+    <h1>This is Gatsby Sample Page</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <StaticImage
@@ -20,7 +19,9 @@ const IndexPage: React.FC = () => (
         style={{ marginBottom: `1.45rem` }}
     />
     <p>
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+        <Link to="/using-typescript/">Go to "Using TypeScript"</Link><br/>
+        <Link to="/samples/samplePage/">Go to "Sample Page"</Link><br/>
+        <Link to="/samples/samplePageChildGraphql/">Go to graphql sample page</Link>
     </p>
   </Layout>
   </>

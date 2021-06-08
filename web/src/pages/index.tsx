@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { ImageFormat, StaticImage } from "gatsby-plugin-image"
-
 import Layout from '../components/share/layout/layout'
+import SamplePage from "../samples/samplePage"
 
 const IndexPage: React.FC = () => (
 <>
@@ -18,10 +18,14 @@ const IndexPage: React.FC = () => (
         alt="A Gatsby astronaut"
         style={{ marginBottom: `1.45rem` }}
     />
+    <div>
+      <p>----------------------sample---------------------------------</p>
+        <SamplePage ></SamplePage>
+      <p>----------------------sample---------------------------------</p>
+    </div>
     <p>
         <Link to="/using-typescript/">Go to "Using TypeScript"</Link><br/>
-        <Link to="/samples/samplePage/">Go to "Sample Page"</Link><br/>
-        <Link to="/samples/samplePageChildGraphql/">Go to graphql sample page</Link>
+        <Link to="../samples/samplePageChildGraphql/">Go to graphql sample page</Link>
     </p>
   </Layout>
   </>

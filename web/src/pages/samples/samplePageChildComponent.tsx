@@ -1,11 +1,11 @@
 import * as React from "react"
 import { SamplePageChildProps, SamplePageChildState } from './types/index'
 
-
 // State(画面上にてこのコンポーネントが持つ状態)が必要な時はclassにて定義
 class SamplePageChildComponent extends React.Component<SamplePageChildProps, SamplePageChildState> {
     constructor(props: SamplePageChildProps) {
         super(props);
+        let s =
         this.state = { title: props.title }
     }
 

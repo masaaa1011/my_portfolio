@@ -35,7 +35,6 @@ body {
 .area_logo_header .logo .img{
   width: 50px;
   height: 30px;
-  vertical-align: bottom;
 }
 .area_nav_header {
   margin-left: auto;
@@ -47,6 +46,12 @@ body {
 
 .list_nav_header > li + li{
   margin-left: 40px;
+}
+.list_nav_header .img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: whitesmoke;
 }
 .list_nav_header a{
   color: rgba(33, 147, 192, 0.815);

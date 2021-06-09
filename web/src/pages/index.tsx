@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { ImageFormat, StaticImage } from "gatsby-plugin-image"
-import Layout from '../components/share/layout/layout'
+import Layout from '../components/layout'
 import SamplePage from "../samples/samplePage"
 
 const IndexPage: React.FC = () => (
@@ -25,7 +25,7 @@ const IndexPage: React.FC = () => (
     </div>
     <p>
         <Link to="/using-typescript/">Go to "Using TypeScript"</Link><br/>
-        <Link to="../samples/samplePageChildGraphql/">Go to graphql sample page</Link>
+        <Link to="/sample-page-child-graphql/">Go to graphql sample page</Link>
     </p>
   </Layout>
   </>

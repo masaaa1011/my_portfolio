@@ -61,3 +61,11 @@ body {
   display: block;
   height: auto;
 }
+
+.contents_wrapper{
+  background: cadetblue;
+}
+
+.contents_wrapper .content_wrapper{
+  background: crimson;
+}

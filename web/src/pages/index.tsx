@@ -2,7 +2,13 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { ImageFormat, StaticImage } from "gatsby-plugin-image"
 import Layout from '../components/layout'
-import SamplePage from "../samples/samplePage"
+
+import Topics from '../components/contents/topics/topics'
+import Works from '../components/contents/works/works'
+import Art from '../components/contents/art/art'
+import Web from '../components/contents/web/web'
+import Contact from '../components/contents/contact/contact'
+import SamplePage from '../samples/samplePage'
 
 const IndexPage: React.FC = () => (
 <>
@@ -18,7 +24,12 @@ const IndexPage: React.FC = () => (
         alt="A Gatsby astronaut"
         style={{ marginBottom: `1.45rem` }}
     />
-    <div>
+    <div className="contents_wrapper">
+      <Topics></Topics>
+      <Works></Works>
+      <Art></Art>
+      <Web></Web>
+      <Contact></Contact>
       <p>----------------------sample---------------------------------</p>
         <SamplePage ></SamplePage>
       <p>----------------------sample---------------------------------</p>

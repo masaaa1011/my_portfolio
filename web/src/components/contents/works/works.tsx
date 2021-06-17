@@ -2,7 +2,11 @@ import * as React from 'react'
 
 const Works: React.FC  = () => (
   <div className="content_wrapper">
-      <a>topics section</a>
+      <div>------------------------------------------</div>
+        <div>
+          <a>works section</a>
+        </div>
+      <div>------------------------------------------</div>
     </div>
 )
 

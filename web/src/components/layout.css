@@ -1,3 +1,4 @@
+/* over all */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -19,6 +20,9 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+/* over all */
+
+/* header */
 .header{
   color: rgba(34, 27, 27, 0.829);
   background: black;
@@ -61,11 +65,30 @@ body {
   display: block;
   height: auto;
 }
+/* header */
 
-.contents_wrapper{
-  background: cadetblue;
+/* body */
+@media screen and (min-width:480px) {
+  .contents_wrapper{
+    background: cadetblue;
+  }
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+  .contents_wrapper{
+    background: cadetblue;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+@media screen and (min-width:1024px) {
+  .contents_wrapper{
+    background: cadetblue;
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
 }
 
 .contents_wrapper .content_wrapper{
   background: crimson;
 }
+/* body */
